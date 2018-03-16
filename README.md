@@ -93,8 +93,7 @@ npm run test
 ```
 
 ## Check in cBioPortal context
-Go to
-http://cbioportal-rc.herokuapp.com/case.do?cancer_study_id=lgg_ucsf_2014&case_id=P04
+Go to http://cbioportal.org (`master` branch) or http://cbioportal.org/beta/ (`rc` branch)
 
 In your browser console set:
 ```
