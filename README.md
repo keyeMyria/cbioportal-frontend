@@ -20,9 +20,13 @@ Rc: http://cbioportal-frontend-rc.herokuapp.com/#/patient?studyId=prad_fhcrc&cas
 This is the frontend code for cBioPortal using React, MobX and TypeScript. The
 frontend for the new patient view is now completely in this repo. The results view page is currently being replaced one tab at a time by mounting certain React components to the results page (JSP) in [the backend repo](https://github.com/cbioportal/cbioportal)
 
-Make sure you have the latest stable node version installed:
+Make sure you have installed the node version specified in [package.json](https://github.com/cBioPortal/cbioportal-frontend/blob/master/package.json). You might want to use NVM to install the particular version.
 
-https://nodejs.org/en/
+Remove old compiled `node_modules` if exists
+
+```
+rm -rf node_modules
+```
 
 To install all app and dev dependencies 
 ```
@@ -43,7 +47,9 @@ export BRANCH_ENV=master # or rc if branching from rc
 npm run start
 ```
 
-A good example page is: http://localhost:3000/?cancer_study_id=lgg_ucsf_2014&case_id=P04
+Example pages:
+ - http://localhost:3000/
+ - http://localhost:3000/#/patient?studyId=lgg_ucsf_2014&caseId=P04
 
 To run unit/integration tests (need to have API URL defined in `.env`)
 ```
